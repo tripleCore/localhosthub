@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+	<!-- name属性配置WebService的名称 -->
+	<service name="myService">
+		<description>Web Service</description>
+		<!-- ServiceClass属性配置提供WebService服务类的全类名 -->
+		<parameter name="ServiceClass">com.demo.webservice.WebServiceDemo
+		</parameter>
+		<!-- 第二种配置方式 -->
+<!-- 		<messageReceivers> -->
+<!-- 			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out" -->
+<!-- 				class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" /> -->
+<!-- 			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" -->
+<!-- 				class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" /> -->
+<!-- 		</messageReceivers> -->
+		<!-- 第一种配置方式：按方法名称进行配置 -->
+		<operation name="sayHello">
+			<!--表示有参有返回值的方法 -->
+			<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+			<!--表示有参没有返回值的方法 -->
+			<messageReceiver
+				class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		</operation>
+		<operation name="getAge">
+			<!--表示有参有返回值的方法 -->
+			<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+			<!--表示有参没有返回值的方法 -->
+			<messageReceiver
+				class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		</operation>
+	</service>
+
+	<!-- 4、与Spring集成配置(web工程):  -->
+<!-- 	<service name="MySpringService" targetNamespace="http://www.test.org">  -->
+<!-- 		<Description>测试spring与axis集成(web工程)</Description>  -->
+<!-- 		<parameter name="ServiceObjectSupplier">org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier</parameter>  -->
+<!-- 		<parameter name="SpringBeanName">springBeanName</parameter>  -->
+<!-- 		<messageReceivers>  -->
+<!-- 			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out" class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>  -->
+<!-- 			<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver"/>  -->
+<!-- 		</messageReceivers>  -->
+<!-- 	</service> -->
+</serviceGroup>  
