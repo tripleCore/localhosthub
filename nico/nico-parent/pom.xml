@@ -44,7 +44,7 @@
 		<flowable.version>6.2.0</flowable.version>
 		<hutool.version>4.0.0</hutool.version>
 		<ureport2.version>2.2.8</ureport2.version>
-		<quartz.version>2.3.0</quartz.version>
+		<quartz.version>2.3.2</quartz.version>
 		<snmp.version>2.5.11</snmp.version>
 		<oshi.version>3.9.1</oshi.version>
 	</properties>
