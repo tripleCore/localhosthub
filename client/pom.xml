@@ -12,7 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<springframework.version>3.2.14.RELEASE</springframework.version>
+		<springframework.version>5.3.19</springframework.version>
 		<axis2.version>1.6.2</axis2.version>
 	</properties>
 
