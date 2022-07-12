@@ -13,7 +13,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<springframework.version>3.2.14.RELEASE</springframework.version>
-		<axis2.version>1.6.2</axis2.version>
+		<axis2.version>1.6.3</axis2.version>
 	</properties>
 
 	<dependencies>
