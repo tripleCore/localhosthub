@@ -42,7 +42,7 @@
 		<mysql-connector-java.version>5.1.38</mysql-connector-java.version>
 		<jwt.version>0.7.0</jwt.version>
 		<flowable.version>6.2.0</flowable.version>
-		<hutool.version>4.0.0</hutool.version>
+		<hutool.version>5.8.10</hutool.version>
 		<ureport2.version>2.2.8</ureport2.version>
 		<quartz.version>2.3.0</quartz.version>
 		<snmp.version>2.5.11</snmp.version>
